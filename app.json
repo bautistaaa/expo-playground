@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "reward",
     "name": "reward",
     "slug": "reward",
     "version": "1.0.0",
