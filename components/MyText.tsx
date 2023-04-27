@@ -1,7 +1,10 @@
 import { Text, TextProps } from "react-native";
+import { Fonts } from "../app/_layout";
+
+type TextVariant = Fonts extends `mplus-${infer Variant}` ? Variant : never;
 
 type MyTextProps = {
-  variant?: "light" | "regular" | "thin";
+  variant?: TextVariant;
 } & TextProps;
 
 export const MyText = ({
